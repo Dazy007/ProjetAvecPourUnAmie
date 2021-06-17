@@ -1,0 +1,717 @@
+* {
+	margin: 0;
+	border: 0;
+}
+
+:root {
+	--jaune: #efd807;
+	--rouge: #cc0000;
+	--bleu: #1877f2;
+}
+
+.maybody {
+	background-color: #ddd;
+}
+
+.navListe {
+	background-color: red;
+	background-image: url(/images/girl.jpg);
+}
+.navTop {
+	background-color: var(--jaune);
+	height: 6vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navTop .buttonToogle {
+	background-color: red;
+	height: 6vh;
+	width: 5vh;
+	position: relative;
+	right: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	display: none;
+}
+.navTop .buttonToogle .line {
+	width: 30px;
+	height: 4px;
+	margin: 2px;
+	background-color: #ddd;
+	transition: 0.5s ease-in-out;
+	border-radius: 2px;
+}
+.navTop .logo img {
+	width: 250px;
+	height: 6vh;
+	object-fit: cover;
+	padding: 1px;
+}
+
+.navTop .bouttonAction {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+.bouttonAction .boutton {
+	padding: 5px;
+}
+.boutton .inscripiton {
+	background-color: var(--bleu);
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	width: 200px;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 2px;
+	height: 5vh;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+.boutton .inscripiton:hover {
+	background-color: var(--rouge);
+	transition: all 0.3s ease-in-out;
+}
+
+.navGroup .img img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+.bouttonAction img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 2px;
+}
+
+.navLinks {
+	display: flex;
+	background-color: var(--jaune);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	width: 100%;
+	padding: 10px;
+}
+
+.navLinks li {
+	color: white;
+	cursor: pointer;
+	align-items: center;
+	background-color: var(--bleu);
+	width: 15%;
+	border: none;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	padding: 8px;
+	text-align: center;
+	justify-content: center;
+	transition: all 0.3s ease-in;
+}
+.navLinks li a {
+	color: #ddd;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.navLinks li:hover {
+	background-color: var(--rouge);
+	transition: all 0.3s ease-in;
+}
+.navLinks li a i {
+	color: var(--jaune);
+}
+.navLinks .boutton {
+	display: none;
+}
+
+.contenuPages {
+	margin-top: 1rem;
+	padding: 40px;
+	width: 80%;
+	box-shadow: 0 2px 3px 0 rgb(0 0 0 / 15%);
+	background-color: #d2d2d2;
+}
+
+/** Apropos style*/
+.apropos {
+	box-shadow: blue;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.apropos .titleApropos h1 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.apropos .titleApropos h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	height: 0.2rem;
+	display: block;
+	width: 200px;
+	background-color: var(--rouge);
+}
+
+.contenuApropos {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.contenuApropos .img {
+	width: 100%;
+}
+.contenuApropos .img img {
+	width: 100%;
+	height: 300px;
+	padding-right: 10px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.contenuApropos .legendeApropos {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenuApropos h3 {
+	font-size: 1.2rem;
+	margin-bottom: 0.6rem;
+}
+
+.legendeApropos p {
+	text-align: justify;
+}
+/** Apropos style*/
+
+/** formation style*/
+.formation {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.formation .titleFormation h1 {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+	position: relative;
+	text-transform: uppercase;
+}
+.formation .titleFormation h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	height: 0.2rem;
+	display: block;
+	width: 230px;
+	background-color: var(--rouge);
+}
+.formation .formationListe {
+	display: flex;
+	background-color: var(--jaune);
+	padding: 20px;
+	width: 100%;
+}
+
+.formationListe .fromationItem1 {
+	width: auto;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	box-shadow: 2.8px 2.8px 2.2px 2.8px rgb(255, 255, 102);
+}
+
+.fromationItem1 .imgFormation1 img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.fromationItem1 .titleFormation1 h2 {
+	text-align: center;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 5px;
+	margin-top: 0.5rem;
+}
+.fromationItem1 .myboutton .bouttonPlus {
+	width: auto;
+	background-color: var(--bleu);
+	font-weight: 500;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	font-size: 15px;
+}
+.fromationItem1 .myboutton .bouttonPlus:hover {
+	background-color: var(--rouge);
+	transition: all 0.3s ease-in-out;
+}
+
+.formation .button {
+	text-align: center;
+	margin-top: 2rem;
+}
+.formation .button .buttonPlus {
+	width: auto;
+	background-color: var(--bleu);
+	font-weight: 500;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	font-size: 15px;
+}
+.formation .button .buttonPlus:hover {
+	background-color: var(--rouge);
+	transition: all 0.3s ease-in-out;
+}
+/** formation style*/
+
+/**personnel style*/
+.personnel {
+	margin-top: 2rem;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.titlePersonnel h1 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 2rem;
+}
+.titlePersonnel h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	height: 0.2rem;
+	width: 220px;
+	background-color: var(--rouge);
+}
+
+.personnelListe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--jaune);
+}
+
+.personnelListe .pernnoleItem1 {
+	width: 20%;
+	border: 1px solid #d2d2d2;
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+	box-shadow: 2.8px 2.8px 2.2px 2.8px rgb(255, 255, 102);
+}
+.pernnoleItem1 .peronnelPhoto img {
+	width: 100%;
+	height: auto;
+}
+.pernnoleItem1 .personnelInfo {
+	background-color: re;
+}
+.pernnoleItem1 .personnelInfo h1 {
+	font-size: 1rem;
+	padding: 5px;
+	text-transform: capitalize;
+	margin-top: 0.5rem;
+}
+
+.pernnoleItem1 .socilContact .iconSocials i {
+	margin: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	color: var(--bleu);
+}
+.pernnoleItem1 .socilContact .iconSocials i:hover {
+	color: var(--rouge);
+}
+
+.personnel .button {
+	text-align: center;
+	margin-top: 2rem;
+}
+.personnel .button .buttonPlus {
+	width: auto;
+	background-color: var(--bleu);
+	font-weight: 500;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	font-size: 15px;
+}
+.personnel .button .buttonPlus:hover {
+	background-color: var(--rouge);
+}
+
+/**personnel style*/
+
+/** style partenaire*/
+.partenaire {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.titlePartenaire h1 {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+.listePartenaire {
+	margin: 10px;
+}
+
+.partenaire .listePartenaire {
+	border: 1px solid #bdbaba;
+	width: 100%;
+	padding: 10px;
+	box-shadow: 5px 12px 2px 1px rgba(104, 104, 104, 0.2);
+}
+.partenaire .listePartenaire .logo img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100%;
+	border: 5px solid var(--bleu);
+	cursor: pointer;
+	transition: transform 0.3s 0.4s;
+}
+.partenaire .listePartenaire .logo img:hover {
+	transform: scale(1.2);
+}
+/** style partenaire*/
+/** style footer*/
+.mayfooter {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: var(--jaune);
+	margin-top: 1rem;
+	align-items: center;
+	padding: 20px;
+}
+
+.mayfooter .footerLeft .goupContact .socialIcon i {
+	padding: 5px;
+	height: 20px;
+	color: var(--bleu);
+}
+.mayfooter .footerLeft .goupContact .socialIcon i:hover {
+	color: var(--rouge);
+}
+
+.mayfooter .footerCenter .goupContact .socialIcon i {
+	padding: 5px;
+	height: 20px;
+	color: var(--bleu);
+}
+
+.mayfooter .footerCenter .goupContact .socialIcon i:hover {
+	color: var(--rouge);
+}
+.mayfooter .footerLeft h1 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.mayfooter .footerCenter h1 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.mayfooter .footerRight h1 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.mayfooter .footerRight .goupForm {
+	width: 100%;
+}
+.footerRight .goupForm form textarea {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+.mayfooter .footerRight .socilaIcons {
+	text-align: center;
+}
+.footerRight .socilaIcons i {
+	margin: 20px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--bleu);
+}
+.footerRight .socilaIcons i:hover {
+	color: var(--rouge);
+}
+.mayfooter .footerRight .goupForm .button {
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.mayfooter .footerRight .goupForm .button .buttonPlus {
+	width: auto;
+	background-color: var(--bleu);
+	font-weight: 500;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 5px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	font-size: 15px;
+}
+.mayfooter .footerRight .goupForm .button .buttonPlus:hover {
+	background-color: var(--rouge);
+}
+/** style footer*/
+/** style inscription*/
+.myinscription {
+	background-color: var(--bleu);
+}
+.inscription {
+	background-color: var(--jaune);
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	margin-top: 200px;
+	border-radius: 1rem;
+}
+
+.incriptionGroup h3 {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+.incriptionGroup p {
+	margin-bottom: 2rem;
+}
+.incriptionGroup .retour {
+	width: 50%;
+	margin: 20px auto;
+	background-color: var(--bleu);
+	padding: 10px;
+	border-radius: 4px;
+}
+.incriptionGroup .retour a {
+	color: #ddd;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+/** style inscription*/
+/**Media query*/
+@media screen and (max-width: 770px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	/** Pour navigation */
+	.navTop .bouttonAction {
+		display: none;
+	}
+
+	.navGroup .img img {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+	}
+
+	.navGroup {
+		position: relative;
+	}
+
+	.navLinks {
+		width: 20%;
+	}
+
+	.navLinks {
+		position: fixed;
+		top: 6vh;
+		right: 0;
+		background-color: var(--rouge);
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		height: 60vh;
+		padding: 5px;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.navLinks .boutton {
+		background-color: var(--jaune);
+		display: block;
+	}
+	.navLinks .boutton:hover {
+		background-color: var(--bleu);
+	}
+	.navLinks .boutton a {
+		color: white;
+
+		text-transform: uppercase;
+	}
+
+	.navLinks li {
+		width: 100%;
+		opacity: 0;
+		background-color: var(--bleu);
+	}
+	.navLinks li:hover {
+		background-color: var(--jaune);
+		border: none;
+	}
+	.navLinks li a i {
+		color: var(--jaune);
+		display: none;
+	}
+	.navTop .buttonToogle {
+		display: block;
+		background-color: var(--rouge);
+		height: 6vh;
+		width: 20%;
+		position: fixed;
+		right: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	/**Pour la section apropos*/
+	.apropos {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.apropos .contenuApropos {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenuApropos .legendeApropos {
+		margin-top: 1rem;
+	}
+
+	/**Pour la section formation*/
+	.formation {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.formation .formationListe {
+		display: flex;
+		flex-direction: column;
+	}
+	.formationListe .fromationItem1 {
+		width: 100%;
+	}
+
+	/**Pour la section personnels*/
+	.personnel {
+		height: auto;
+	}
+	.personnel .personnelListe {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.personnelListe .pernnoleItem1 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/** Pour le section footer*/
+	.mayfooter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.mayfooter .footerLeft {
+		margin-bottom: 2rem;
+	}
+
+	.mayfooter .footerCenter {
+		margin-bottom: 2rem;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+	transition: transfrom 0.5s ease-in-out;
+}
+
+.toggle .line2 {
+	opacity: 0;
+	transition: transfrom 0.5s ease-in-out;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+	transition: transfrom 0.5s ease-in-out;
+}
+/**Media query*/
