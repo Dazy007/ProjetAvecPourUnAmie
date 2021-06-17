@@ -503,7 +503,17 @@
 .mayfooter .footerRight .goupForm .button .buttonPlus:hover {
 	background-color: var(--rouge);
 }
+
+.copyrigth {
+	text-align: center;
+	background-color: var(--jaune);
+}
+.copyrigth p {
+	color: #020202;
+	font-size: 12px;
+}
 /** style footer*/
+
 /** style inscription*/
 .myinscription {
 	background-color: var(--bleu);
