@@ -209,9 +209,10 @@
 }
 .contenuApropos .img {
 	width: 100%;
+	display: flex;
 }
 .contenuApropos .img img {
-	width: 100%;
+	width: 50%;
 	height: 300px;
 	padding-right: 10px;
 	object-fit: cover;
